@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document1</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      @media screen and (max-width: 1000px) {
+        div {
+          background-color: blue !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div
+      style="
+        position: absolute;
+        z-index: 1;
+        background-color: red;
+        width: 200px;
+        height: 100px;
+      "
+    ></div> -->
+    <div
+      style="
+        position: absolute;
+        z-index: -6;
+        top: 0;
+        left: 100px;
+        background-color: yellow;
+        width: 200px;
+        height: 100px;
+      "
+    ></div>
+    <div
+      style="
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 50px;
+        background-color: orange;
+        width: 200px;
+        height: 100px;
+      "
+    ></div>
+    <div style="margin-top: 500px; display: flex; flex-direction: column">
+      <label for="ad">ricxvi</label>
+      <input type="number" name="ad" id="ad" />
+    </div>
+    <script>
+      function ragacFunqcia(a, b) {
+        console.log(a + b);
+      }
+      var arr = [0, 1, 2];
+      arr.unshift(4);
+      // unshift / shift / push / pop
+      console.log(arr.length);
+      ragacFunqcia(10, 5);
+      console.log(5 + 10 + "3" + "5");
+
+      const person = {
+        age: 16,
+        name: "Nia",
+        surname: "Narmania",
+      };
+      console.log(
+        "this is " +
+          person.name +
+          " " +
+          person.surname +
+          " " +
+          person.age +
+          " " +
+          "wlis"
+      );
+      console.log(
+        `this is ${person.name} ${person.surname} ${person.age} wlis`
+      );
+
+      var saxeli = (a, b) => {
+        return a + b;
+      };
+
+      var cvladi = document.getElementById("ad");
+      cvladi.addEventListener("keydown", (e) => {
+        cvladi.style.backgroundColor = "red";
+        if (e.key === "Enter") {
+          cvladi.style.backgroundColor = "green";
+          console.log(e);
+        }
+      });
+      console.log(5 == "5");
+      console.log(5 === "5");
+
+      if (5 === 5 || 3 === 2) {
+        console.log("ki");
+      }
+      // return tu araqvs void
+
+      function nia() {
+        let x = 10;
+        function inner() {
+          let y = 5;
+          return x + y;
+        }
+        return inner;
+      }
+
+      const closureFunction = nia();
+
+      console.log(closureFunction());
+
+      document.addEventListener("click", () => {
+        let i = 0;
+        while (i < 5) {
+          var newParagraph = document.createElement("p");
+          newParagraph.textContent = "es aris axali paragraph";
+          document.body.appendChild(newParagraph);
+          i++;
+        }
+      });
+    </script>
+  </body>
+</html>
